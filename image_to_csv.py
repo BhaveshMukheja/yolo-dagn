@@ -1,24 +1,32 @@
 import os
 import pandas as pd
 
-# Paths (update these)
-input_csv = r"data/baselineModel/681_from_GOTHIC.csv"
-image_folder = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\\data\val\images"   # folder containing your images
-output_csv = "data/baselineModel/val/val.csv"
+# Paths
+input_csv = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\\47k_ObjID__RA_DEC.csv"
+image_folder = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\yolo_Model_2\\data\test"
+output_csv = "data/finalModel/test.csv"
 
-# Read CSV
-df = pd.read_csv(input_csv)
+# Read CSV (keep as string to avoid scientific notation issues)
+df = pd.read_csv(input_csv, dtype=str)
 
-# Get list of image filenames (without extension)
-image_files = os.listdir(image_folder)
+# -------------------------
+# Get ALL image filenames recursively
+# -------------------------
+valid_ids = set()
 
-# Create a set of valid ObjIDs (strip extensions)
-valid_ids = set(os.path.splitext(img)[0] for img in image_files)
+for root, dirs, files in os.walk(image_folder):
+    for file in files:
+        name, ext = os.path.splitext(file)
+        valid_ids.add(name)
 
-# Filter rows where ObjID exists in image folder
-filtered_df = df[df['ObjID'].astype(str).isin(valid_ids)]
+print(f"Found {len(valid_ids)} image IDs")
 
-# Save to new CSV
+# -------------------------
+# Filter CSV
+# -------------------------
+filtered_df = df[df['ObjID'].str.strip().isin(valid_ids)]
+
+# Save
 filtered_df.to_csv(output_csv, index=False)
 
 print(f"Saved {len(filtered_df)} rows to {output_csv}")
