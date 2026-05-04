@@ -3,10 +3,10 @@ import shutil
 import pandas as pd
 
 # Update these paths
-csv_main = "data/finalModel/sample/sample.csv"          # CSV containing ObjID list
-csv_lookup = "data/finalModel/sample/sample.csv"      # CSV to search and copy rows from
-image_root = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\yolo_Model_2\\data\test"        # Root folder containing image subfolders
-output_csv = "data/finalModel/sample/merged.csv"
+csv_main = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\\47k_ObjID__RA_DEC.csv"          # CSV containing ObjID list
+csv_lookup = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\\47k_ObjID__RA_DEC.csv"      # CSV to search and copy rows from
+image_root = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\\data\test\images\\Batch1_predictions\predict\labels"        # Root folder containing image subfolders
+output_csv = "results/baselineModel/predictions"
 output_image_folder = "data/finalModel/sample/selected_images/"
 
 # Create output folder if it doesn't exist

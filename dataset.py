@@ -3,9 +3,9 @@ import pandas as pd
 # =========================
 # CONFIG
 # =========================
-SOURCE_CSV = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\\47k_ObjID__RA_DEC.csv"   # CSV containing ObjID, RA, DEC
-TARGET_CSV = "data/finalModel/681_from_GOTHIC.csv"   # CSV where you want to add/update RA, DEC
-OUTPUT_CSV = "merged_output.csv"
+SOURCE_CSV = r"star_dual_nuclei.csv"   # CSV containing ObjID, RA, DEC
+TARGET_CSV = "filenames.csv"   # CSV where you want to add/update RA, DEC
+OUTPUT_CSV = "results/finalModel/post-filter/only_stars.csv"
 
 # =========================
 # LOAD FILES
@@ -18,7 +18,7 @@ source_df.columns = source_df.columns.str.strip()
 target_df.columns = target_df.columns.str.strip()
 
 # Ensure required columns exist
-required_source = {"ObjID","SpecObjID"}
+required_source = {"ObjID","SpecObjID", "RA", "DEC"}
 required_target = {"ObjID"}
 
 missing_source = required_source - set(source_df.columns)
@@ -34,7 +34,7 @@ if missing_target:
 # MERGE RA and DEC
 # =========================
 # Keep only needed columns from source
-source_subset = source_df[["ObjID", "SpecObjID"]]
+source_subset = source_df[["ObjID", "SpecObjID", "RA", "DEC"]]
 
 # Merge into target
 merged_df = target_df.merge(source_subset, on="ObjID", how="left")

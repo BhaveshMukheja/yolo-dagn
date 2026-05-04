@@ -3,8 +3,8 @@ import pandas as pd
 
 # Paths
 input_csv = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\\47k_ObjID__RA_DEC.csv"
-image_folder = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\yolo_Model_2\\data\test"
-output_csv = "data/finalModel/test.csv"
+image_folder = r"D:\College\Research\\Astrophysics\ProjectTry\ModelMaking\yolo_Model_2\\data\test\\Batch2_predictions\predict\labels"
+output_csv = "results/finalModel/predictions/batch2.csv"
 
 # Read CSV (keep as string to avoid scientific notation issues)
 df = pd.read_csv(input_csv, dtype=str)
