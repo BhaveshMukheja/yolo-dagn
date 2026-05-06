@@ -15,4 +15,4 @@ inference:
   show_labels: true
 
   project: results/baselineModel
-  name: test_predictions
+  name: predictions

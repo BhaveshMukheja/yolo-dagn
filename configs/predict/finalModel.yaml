@@ -15,4 +15,4 @@ inference:
   show_labels: true    # keep class names
 
   project: results/finalModel
-  name: test_predictions
+  name: predictions
