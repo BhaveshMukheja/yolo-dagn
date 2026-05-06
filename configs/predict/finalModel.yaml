@@ -1,0 +1,18 @@
+model:
+  weights: runs/finalModel/weights/best.pt
+
+inference:
+  source: data/finalModel/test/images
+
+  conf: 0.55
+  imgsz: 640
+  device: cpu     # change to "0,1" for multi-GPU
+  batch: 32
+
+  # Visualization
+  line_width: 2
+  show_conf: true     #  False for remove the confidence score in images
+  show_labels: true    # keep class names
+
+  project: results/finalModel
+  name: test_predictions

@@ -1,0 +1,18 @@
+model:
+  weights: runs/baselineModel/weights/best.pt
+
+inference:
+  source: data/baselineModel/test/images
+
+  conf: 0.189
+  imgsz: 640
+  device: cpu
+  batch: 16
+
+  # Visualization
+  line_width: 2
+  show_conf: true
+  show_labels: true
+
+  project: results/baselineModel
+  name: test_predictions

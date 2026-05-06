@@ -1,0 +1,14 @@
+# Root dataset directory
+path: data/finalModel
+
+# Image paths
+train: train/images
+val: val/images
+
+# Number of classes
+nc: 2
+
+# Class names
+names:
+  0: dual_nuclei
+  1: star

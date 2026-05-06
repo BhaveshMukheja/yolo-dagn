@@ -1,0 +1,14 @@
+# Root dataset directory
+path: data/baselineModel
+
+# Image paths (relative to 'path')
+train: train/images
+val: val/images
+
+
+# Number of classes
+nc: 1
+
+# Class names
+names:
+  0: dual_nuclei

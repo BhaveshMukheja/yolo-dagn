@@ -1,0 +1,22 @@
+model:
+  weights: yolo11x-obb.pt
+
+train:
+  data: configs/train/yolo11x-obb.yaml
+  epochs: 300
+  imgsz: 1280
+  batch: 64
+  device: "0,1"
+  workers: 16
+
+  optimizer: AdamW
+  amp: true
+
+  project: runs/finalModel
+  name: yolo11x_obb_final
+
+  save_period: 10
+
+export:
+  enable: true
+  format: onnx

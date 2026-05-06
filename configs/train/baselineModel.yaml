@@ -1,0 +1,18 @@
+model:
+  weights: yolo11n.pt
+
+train:
+  data: configs/train/yolo11n.yaml
+  epochs: 400
+  imgsz: 640
+  batch: 16
+  device: 0
+  workers: 8
+
+  project: runs/baselineModel
+  name: yolo11n_baseline
+
+export:
+  enable: true
+  format: onnx
+  
