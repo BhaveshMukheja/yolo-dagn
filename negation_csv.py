@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load files
-god = pd.read_csv("detections_with_boob.csv")
+god = pd.read_csv("results/finalModel/total_without_duplicates.csv")
 subset = pd.read_csv("data/finalModel/bootstrapped_data.csv")
 
 # Ensure same column order (important!)
