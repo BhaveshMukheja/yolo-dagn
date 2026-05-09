@@ -247,8 +247,6 @@ are available under:
 notebooks/
 ```
 
-Additional details: [`docs/notebooks.md`](docs/notebooks.md)
-
 ## Results
 
 ### Validation Results
