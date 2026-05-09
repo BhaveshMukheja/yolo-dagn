@@ -11,8 +11,8 @@ inference:
 
   # Visualization
   line_width: 2
-  show_conf: true     #  False for remove the confidence score in images
-  show_labels: true    # keep class names
+  show_conf: false     #  False for remove the confidence score in images
+  show_labels: false    # keep class names
 
   project: results/finalModel
   name: predictions

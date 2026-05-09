@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+title: "Decoupling Candidate Dual AGNs from Chance Superpositions in the GOTHIC Survey via a Deep-Learning Framework"
+message: "If you use this repository in your research, please cite the associated paper and repository."
+type: software
+
+authors:
+  - family-names: "Mukheja"
+    given-names: "Bhavesh"
+    affiliation: "Indian Institute of Technology Kharagpur"
+
+repository-code: "https://github.com/BhaveshMukheja/yolo-dagn"
+
+license: MIT
+
+keywords:
+  - astronomy
+  - astrophysics
+  - dual agn
+  - yolo
+  - object detection
+  - deep learning
+  - sdss
+  - computer vision
+
+abstract: >
+  Deep-learning framework based on YOLOv11x-OBB for identifying
+  candidate dual active galactic nuclei (DAGN) systems from SDSS
+  imaging data while filtering foreground stellar contamination
+  and spurious alignments.
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Mukheja"
+      given-names: "Bhavesh"
+    - family-names: "Das"
+      given-names: "Mousumi"
+    - family-names: "Bhattacharya"
+      given-names: "Anwesh"
+    - family-names: "Saha"
+      given-names: "Snehanshu"
+  title: "Decoupling Candidate Dual AGNs from Chance Superpositions in the GOTHIC Survey via a Deep-Learning Framework"
+  journal: "Monthly Notices of the Royal Astronomical Society"
+  year: 2026

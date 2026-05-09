@@ -21,8 +21,11 @@ def run_inference(cfg):
 
     source_dir = infer_cfg["source"]
 
+    # Resolve absolute output path
+    project_dir = os.path.abspath(infer_cfg["project"])
+
     # Create output dir
-    os.makedirs(infer_cfg["project"], exist_ok=True)
+    os.makedirs(project_dir, exist_ok=True)
 
     # Load model
     print(f"\n[INFO] Loading model: {model_path}")
@@ -60,7 +63,7 @@ def run_inference(cfg):
         show_conf=infer_cfg.get("show_conf", True),
         show_labels=infer_cfg.get("show_labels", True),
 
-        project=infer_cfg["project"],
+        project=project_dir,
         name=infer_cfg["name"],
         exist_ok=True,
 
@@ -68,7 +71,7 @@ def run_inference(cfg):
     )
 
     print("\n[INFO] Inference complete!")
-    print(f"[INFO] Results saved to: {infer_cfg['project']}/{infer_cfg['name']}")
+    print(f"[INFO] Results saved to: {project_dir}/{infer_cfg['name']}")
 
     return results
 
