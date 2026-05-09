@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Table of Contents
-
+- [Overview](#overview)
 - [Repository Structure](#repository-structure)
 - [Pipeline](#pipeline)
 - [Quick Setup](#quick-setup)
@@ -247,7 +247,7 @@ are available under:
 notebooks/
 ```
 
-## Additional details: [`docs/notebooks.md`](docs/notebooks.md)
+Additional details: [`docs/notebooks.md`](docs/notebooks.md)
 
 ## Results
 
