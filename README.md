@@ -103,8 +103,13 @@ The repository follows the workflow below:
 6. Statistical analysis and visualization
 
 Detailed documentation for each step is available under the [`docs/`](docs/) directory.
-<p align="center">
-<img src="figures/pipeline.png" alt="Training and inference pipeline of the final YOLOv11x-OBB framework. Annotated samples are used for supervised training, followed by large-scale inference and post-processing to construct the final dual-nuclei catalog." width="100%">
+
+<p align="center" style="background:white; padding:5px">
+  <img 
+    src="figures/pipeline.png"
+    alt="Training and inference pipeline of the final YOLOv11x-OBB framework. Annotated samples are used for supervised training, followed by large-scale inference and post-processing to construct the final dual-nuclei catalog."
+    width="100%"
+  >
 </p>
 
 ---
@@ -247,19 +252,19 @@ notebooks/
 ## Results
 
 ### Validation Results
+
 <p align="center">
   <!-- <img src="figures/confusion_matrix.png" alt="Confusion Matrix" width="20%"> -->
   <img src="figures/yolo_val_metrics.png" alt="Training evolution of the final YOLOv11x–OBB model. Validation mAP, precision, recall, and loss terms are shown as functions of epoch. The vertical dashed line marks the selected best checkpoint (epoch 137)." width="100%">
 </p>
 
-
 ### Sample Dual-Nuclei Detections
+
 <p align="center">
   <img src="results/finalModel/sample/dual-nuclei/1237650795146182725.jpg" alt="1237650795146182725" width="30%">
   <img src="results/finalModel/sample/dual-nuclei/1237650795682791609.jpg" alt="1237650795682791609" width="30%">
   <img src="results/finalModel/sample/dual-nuclei/1237650795683512507.jpg" alt="1237650795683512507" width="30%">
 </p>
-
 
 ### Sample Galaxy+Star Overlap Detections
 
@@ -269,38 +274,37 @@ notebooks/
   <img src="results/finalModel/sample/star-galaxy-overlap/1237648702983307350.jpg" alt="" width="30%">
 </p>
 
-
 ### Sample Star-Only Detections
+
 <p align="center">
   <img src="results/finalModel/sample/pure-stars/1237645943978655982.jpg" alt="1237645943978655982" width="30%">
   <img src="results/finalModel/sample/pure-stars/1237648673992999044.jpg" alt="1237648673992999044" width="30%">
   <img src="results/finalModel/sample/pure-stars/1237648674533934097.jpg" alt="1237648674533934097" width="30%">
 </p>
 
-
 ### Projected Separation Distribution
+
 <p align="center">
-  <img src="figures/proj_sep_arc.png" alt="Distribution of separations between detected nuclei candidates." width="30%">
+  <img src="figures/proj_sep_arc.png" alt="Distribution of separations between detected nuclei candidates." width="50%">
 
 </p>
-
 
 ---
 
 ## Acknowledgement
 
 The author sincerely thanks Professor Mousumi Das for the opportunity to work on this project and for her continuous guidance throughout the research.
-
 Special thanks to Anwesh, the developer of the GOTHIC pipeline, for his insightful discussions and contributions during the development of this work. The author also thanks Snehanshu Sir for his guidance in machine learning research and methodology.
-
 The computational experiments in this work were supported by the Param Shakti HPC facility at IIT Kharagpur. The author is grateful to Professor Somnath Bharadwaj and the faculty of IIT Kharagpur for their support and assistance.
+
 ---
+
 ## Citation
 
 If you use this repository in your research, please cite:
 
-[`CITATION.cff`](CITATION.cff)
----
+## [`CITATION.cff`](CITATION.cff)
+
 ## License
 
 This project is licensed under the MIT License.
