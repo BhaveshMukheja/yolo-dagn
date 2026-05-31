@@ -70,8 +70,14 @@ The final pipeline identifies a large population of likely dual-nuclei candidate
 │   │       ├───images
 │   │       └───labels
 │   └───finalModel
-│       └───sample
+│       └───random_sampling
 │           ├───200_random_sampling
+│           │   ├───images
+│           │   └───labels
+│           ├───100_random_sampling_10_arc
+│           │   ├───images
+│           │   └───labels
+│           ├───100_random_sampling_12_5_arc
 │           │   ├───images
 │           │   └───labels
 │           ├───dual-nuclei
@@ -249,6 +255,19 @@ notebooks/
 
 ## Results
 
+### Class-specific validation performance metrics
+| Class           | P     | R     | F1    | Acc.  | LR⁺  |
+| --------------- | ----- | ----- | ----- | ----- | ---- |
+| Dual nuclei     | 0.967 | 0.803 | 0.877 | 80.3% | 47.2 |
+| Foreground star | 0.835 | 0.838 | 0.837 | 83.8% | 16.4 |
+
+### Sensitivity analysis of dual-nucleus detection
+| Subset      | Population (N) | Sample (n) | Accuracy (p̂) | 95% CI on p̂   | Projected Count         |
+| ----------- | -------------: | ---------: | ------------: | -------------- | ----------------------- |
+| Full sample |         29,605 |        200 |         0.545 | [0.476, 0.614] | 16,135 [14,092, 18,171] |
+| d ≤ 10″     |         23,309 |        100 |         0.590 | [0.494, 0.686] | 13,752 [11,516, 15,984] |
+| d ≤ 12.5″   |         28,660 |        100 |         0.620 | [0.525, 0.715] | 17,769 [15,047, 20,491] |
+
 ### Validation Results
 
 <p align="center">
@@ -286,6 +305,7 @@ notebooks/
   <img src="figures/proj_sep_arc.png" alt="Distribution of separations between detected nuclei candidates." width="50%">
 
 </p>
+
 
 ---
 
