@@ -12,6 +12,7 @@ venv/
 
 .vscode
 scripts/
+GOTHIC/
 
 # Conda
 conda-meta/
