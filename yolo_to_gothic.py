@@ -4,8 +4,8 @@ import numpy as np
 # ------------------------------------------------------------------
 # Input/output files
 # ------------------------------------------------------------------
-INPUT_CSV = "results/finalModel/projected_separations_s_kpc.csv"
-OUTPUT_CSV = "gothic_catalog.csv"
+INPUT_CSV = "failed/projected_separations_s_kpc.csv"
+OUTPUT_CSV = "gothic_catalog_failed.csv"
 
 # ------------------------------------------------------------------
 # Read catalog

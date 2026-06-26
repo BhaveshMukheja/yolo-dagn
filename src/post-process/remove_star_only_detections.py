@@ -3,11 +3,11 @@ import pandas as pd
 from tqdm import tqdm
 
 # ===== CONFIG =====
-LABELS_DIR = "results/finalModel/predictions/labels"
-CSV_PATH = "data/finalModel/test/test.csv"
+LABELS_DIR = "GOTHIC/predictions/labels"
+CSV_PATH = "100_random_sampling_12_5_arc/100_sample_madarchod.csv"
 
-OUTPUT_REMOVED = "results/finalModel/pure_stars.csv"
-OUTPUT_RETAINED = "results/finalModel/filtered/predictions_minus_pure_stars.csv"
+OUTPUT_REMOVED = "GOTHIC/pure_stars.csv"
+OUTPUT_RETAINED = "GOTHIC/filtered/predictions_minus_pure_stars.csv"
 
 
 # ===== CHECK FUNCTION =====

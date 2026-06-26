@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 
 # Input CSV file
-input_file = "results/finalModel/projected_separations.csv"
+input_file = "failed/projected_separations.csv"
 
 # Output CSV file
-output_file = "results/finalModel/projected_separations_s_kpc.csv"
+output_file = "failed/projected_separations_s_kpc.csv"
 
 # Read the CSV
 df = pd.read_csv(input_file)

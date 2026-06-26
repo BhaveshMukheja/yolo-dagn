@@ -2,17 +2,17 @@ model:
   weights: runs/finalModel/weights/best.pt
 
 inference:
-  source: data/finalModel/test/images
+  source: 100_random_sampling_12_5_arc/madarchod
 
   conf: 0.55
   imgsz: 640
-  device: cpu     # change to "0,1" for multi-GPU
-  batch: 32
+  device: cpu    # change to "0,1" for multi-GPU
+  batch: 1
 
   # Visualization
   line_width: 2
   show_conf: false     #  False for remove the confidence score in images
   show_labels: false    # keep class names
 
-  project: results/finalModel
+  project: GOTHIC
   name: predictions

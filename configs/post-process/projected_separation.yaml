@@ -2,9 +2,9 @@
 # INPUT / OUTPUT
 # ============================================================
 
-labels_dir: results/finalModel/predictions/labels
+labels_dir: failed
 
-output_csv: results/finalModel/projected_separations.csv
+output_csv: failed/projected_separations.csv
 
 # ============================================================
 # IMAGE SETTINGS

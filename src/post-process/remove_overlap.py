@@ -7,12 +7,12 @@ from tqdm import tqdm
 # =========================
 # CONFIG
 # =========================
-LABELS_DIR = "results/finalModel/predictions/labels"
+LABELS_DIR = "GOTHIC/predictions/labels"
 
-INPUT_CSV = "results/finalModel/filtered/predictions_minus_pure_stars.csv"
+INPUT_CSV = "GOTHIC/filtered/predictions_minus_pure_stars.csv"
 
-OUTPUT_OVERLAP = "results/finalModel/galaxy_star_intesections.csv"
-OUTPUT_FINAL = "results/finalModel/dual_nuclei.csv"
+OUTPUT_OVERLAP = "GOTHIC/galaxy_star_intesections.csv"
+OUTPUT_FINAL = "GOTHIC/dual_nuclei.csv"
 
 
 # =========================
