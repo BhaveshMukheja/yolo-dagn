@@ -302,8 +302,15 @@ notebooks/
 ### Projected Separation Distribution
 
 <p align="center">
-  <img src="figures/proj_sep_arc.png" alt="Distribution of separations between detected nuclei candidates." width="50%">
+  <img src="figures/proj_sep_hist_arcsec.png" alt="Angular centroid-to-centroid separation." width="50%">
+  <img src="figures/proj_sep_hist_kpc.png" alt="Projected physical separation.." width="50%">
 
+</p>
+
+### Least Separation Estimated
+
+<p align="center">
+  <img src="figures/least_sep_arcsec.jpg" alt="objID: 1237660239778021761" width="50%">
 </p>
 
 
